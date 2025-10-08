@@ -11,11 +11,12 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Logo in top right corner */}
-      <div className="absolute top-8 right-8 z-20">
+      <div className="absolute top-8 right-8 z-20 w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full">
         <img 
           src={logo} 
           alt="Body Solutions by Sam Logo" 
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover"
+          className="w-full h-full object-cover scale-110"
+          style={{ objectPosition: 'center 45%' }}
         />
       </div>
 
