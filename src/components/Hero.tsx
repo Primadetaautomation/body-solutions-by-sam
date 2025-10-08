@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-pilates.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToConsultation = () => {
@@ -9,6 +10,15 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Logo in top right corner */}
+      <div className="absolute top-8 right-8 z-20">
+        <img 
+          src={logo} 
+          alt="Body Solutions by Sam Logo" 
+          className="w-24 h-24 md:w-32 md:h-32 object-contain"
+        />
+      </div>
+
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}
